@@ -1,0 +1,15 @@
+/* 编辑器 */
+.edui-editor {
+  position: relative;
+}
+/* toolbarbox */
+.edui-editor-toolbarbox {
+  display: none;
+}
+.edui-editor-bottomContainer {
+  display: none;
+}
+/* 粘贴选项 */
+.edui-wordpastepop {
+  display: none;
+}

@@ -1,0 +1,7 @@
+.idea/
+test/
+node_modules/
+.DS_Store
+*.zip
+dist/
+*.log
