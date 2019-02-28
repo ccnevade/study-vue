@@ -115,7 +115,8 @@ export default {
             courseFileObj:{
               courseId:null,
               fileName:'',
-              fileUri:''
+              fileUri:'',
+              fileType:''
             }
         }
     },
@@ -202,7 +203,8 @@ export default {
         handleAvatarSuccessImg(res, file) {
             if (res.code == 200000) {
                 console.log("handleAvatarSuccessImg:" + JSON.stringify(res));
-                this.courseFileObj.fileUri=res.data;
+                this.courseFileObj.fileUri=res.data.uri;
+                this.courseFileObj.fileType=res.data.fileType;
             } else {
                 this.$message({
                     showClose: true,
