@@ -22,7 +22,7 @@
             <el-table-column label="操作" align="center" width="180">
                 <template scope="scope">
                     <!-- <el-button size="mini" type="warning" icon="el-icon-edit" @click="edit(scope.$index,scope.row)">编辑</el-button> -->
-                    <el-button  size="mini" type="danger" v-if="scope.row.permission!=1"  @click="del(scope.$index,scope.row)">删除</el-button>
+                    <el-button  size="mini" type="danger" v-if="$store.state.userInfo.permission==1 && scope.row.permission!=1"  @click="del(scope.$index,scope.row)">删除</el-button>
                 </template>
             </el-table-column>
         </el-table>
